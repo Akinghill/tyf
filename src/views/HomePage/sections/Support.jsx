@@ -6,8 +6,7 @@ import BrainIcon from '../../../components/icons/BrainIcon'
 import PhysicalIcon from '../../../components/icons/PhysicalIcon'
 import MoneyIcon from '../../../components/icons/MoneyIcon';
 
-
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   support: {
     background: "rgba(0,0,0,.2)",
     paddingTop: "5rem",
@@ -31,9 +30,12 @@ const useStyles = makeStyles({
     fontSize: "8rem",
     background: "#fdd835",
     borderRadius: "50%",
-    padding: "1rem"
+    padding: "1rem",
+    [theme.breakpoints.down('sm')]: {
+      fontSize: "4rem",
+    }
   }
-});
+}));
 
 const Support = () => {
   const classes = useStyles();

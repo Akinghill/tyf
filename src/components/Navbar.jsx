@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Navbar() {
   const classes = useStyles();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('sm'));
+  const smScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <div className={classes.root}>
@@ -33,7 +33,7 @@ export default function Navbar() {
             Teach You Freedom
           </Typography>
           {
-            !matches &&
+            !smScreen &&
             (
               <>
                 <Button color="secondary">Break Free</Button>
@@ -42,7 +42,6 @@ export default function Navbar() {
               </>
             )
           }
-
         </Toolbar>
       </AppBar>
     </div>

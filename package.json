@@ -1,6 +1,6 @@
 {
   "homepage": "http://akinghill.github.io/tyf",
-  "name": "-tyf",
+  "name": "tyf",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
