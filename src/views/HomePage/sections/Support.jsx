@@ -1,10 +1,15 @@
 import React from 'react';
 import { Typography, makeStyles, Grid } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 import MeditationIcon from '../../../components/icons/MeditationIcon'
 import PsychologyIcon from '../../../components/icons/PsychologyIcon'
 import BrainIcon from '../../../components/icons/BrainIcon'
 import PhysicalIcon from '../../../components/icons/PhysicalIcon'
 import MoneyIcon from '../../../components/icons/MoneyIcon';
+
+
 
 const useStyles = makeStyles((theme) => ({
   support: {
@@ -15,7 +20,11 @@ const useStyles = makeStyles((theme) => ({
   sectionTitle: {
     marginBottom: "3rem",
     maxWidth: "800px",
-    margin: "auto"
+    margin: "auto",
+    padding: "0rem 2rem",
+    [theme.breakpoints.down('sm')]: {
+      fontSize: "2.75rem",
+    }
   },
   supportContent: {
     padding: "2rem"
@@ -34,19 +43,29 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: "4rem",
     }
+  },
+  supportCopy: {
+    textAlign: "right",
+    padding: '0rem 2rem',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: "center",
+      fontSize: "2rem",
+    }
   }
 }));
 
 const Support = () => {
   const classes = useStyles();
+  const theme = useTheme();
+  const mdScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <>
       <div className={classes.support}>
         <Typography align='center' variant="h2" className={classes.sectionTitle} data-aos="flip-up"> Supported Through Ongoing Accountability and Education </Typography>
-        <Grid container spacing={9} alignItems="center" justify='center'>
+        <Grid container spacing={mdScreen ? 9 : 0} alignItems="center" justify='center'>
           <Grid item sm={12} md={4} data-aos="flip-down" >
-            <Typography align='right' variant="h3">Leads to sustainable, long term results in the 5 big areas</Typography>
+            <Typography className={classes.supportCopy} variant="h3">Leads to sustainable, long term results in the 5 big areas</Typography>
           </Grid>
           <Grid item sm={12} md={4} >
             <Grid container alignItems="center">

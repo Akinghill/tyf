@@ -4,7 +4,7 @@ import { Button, makeStyles, Typography } from '@material-ui/core';
 const useStyles = makeStyles({
   hero: {
     minHeight: '90vh',
-    backgroundImage: 'url("./tyf/img/hero-bg.jpeg")',
+    backgroundImage: 'url("./tyf/img/hero-bg.jpg")',
     backgroundSize: "cover",
     backgroundPosition: "center center",
     backgroundRepeat: "no repeat",
