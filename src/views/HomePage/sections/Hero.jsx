@@ -4,7 +4,7 @@ import { Button, makeStyles, Typography } from '@material-ui/core';
 const useStyles = makeStyles({
   hero: {
     minHeight: '90vh',
-    backgroundImage: 'url("./tyf/img/hero-bg.jpg")',
+    backgroundImage: 'url("./img/hero-bg.jpg")',
     backgroundSize: "cover",
     backgroundPosition: "center center",
     backgroundRepeat: "no repeat",
@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
   heroText: {
     color: "#000",
-    fontWeight: 900
+    paddingTop: "6rem"
   },
   heroContent: {
     position: "relative",
@@ -35,7 +35,7 @@ const Hero = (props) => {
     <>
       <div className={classes[sectionName]}>
         <div className={classes.heroContent}>
-          <Typography align="center" variant="h1" style={{ "color": "white" }}>Are you ready?</Typography>
+          <Typography className={classes.heroText} align="center" variant="h1" style={{ "color": "white" }}>Are you ready?</Typography>
           <Button size="large" variant='contained' color="secondary" className={classes.cta}>Break Free</Button>
         </div>
       </div>

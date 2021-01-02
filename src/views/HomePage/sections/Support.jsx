@@ -14,14 +14,13 @@ import MoneyIcon from '../../../components/icons/MoneyIcon';
 const useStyles = makeStyles((theme) => ({
   support: {
     background: "rgba(0,0,0,.2)",
-    paddingTop: "5rem",
+    padding: "5rem 2rem",
     minHeight: '55vh'
   },
   sectionTitle: {
     marginBottom: "3rem",
     maxWidth: "800px",
     margin: "auto",
-    padding: "0rem 2rem",
     [theme.breakpoints.down('sm')]: {
       fontSize: "2.75rem",
     }
@@ -51,6 +50,11 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       fontSize: "2rem",
     }
+  },
+  iconContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center' 
   }
 }));
 
@@ -68,15 +72,15 @@ const Support = () => {
             <Typography className={classes.supportCopy} variant="h3">Leads to sustainable, long term results in the 5 big areas</Typography>
           </Grid>
           <Grid item sm={12} md={4} >
-            <Grid container alignItems="center">
-              <Grid item sm={4} data-aos="flip-left" data-aos-delay="300">
+            <Grid container alignItems="center" justify='center'>
+              <Grid className={classes.iconContainer} item sm={4} data-aos="flip-left" data-aos-delay="300">
                 <MeditationIcon className={classes.icon} ></MeditationIcon>
                 <MoneyIcon viewBox="-45 -45 600 600" className={classes.icon} ></MoneyIcon>
               </Grid>
-              <Grid item sm={4} data-aos="flip-left" data-aos-delay="250">
+              <Grid className={classes.iconContainer} item sm={4} data-aos="flip-left" data-aos-delay="250">
                 <BrainIcon viewBox="-50 -70 600 600" className={classes.icon}></BrainIcon>
               </Grid>
-              <Grid item sm={4} data-aos="flip-left" data-aos-delay="500">
+              <Grid className={classes.iconContainer} item sm={4} data-aos="flip-left" data-aos-delay="500">
                 <PhysicalIcon viewBox="-50 -60 650 650" className={classes.icon}></PhysicalIcon>
                 <PsychologyIcon className={classes.icon}></PsychologyIcon>
               </Grid>
