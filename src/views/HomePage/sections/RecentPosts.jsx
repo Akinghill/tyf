@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   frame: {
     border: "0px",
     width: '100%',
-    height: "",
+    height: "200px",
     marginBottom: "5px"
   },
   date: {
