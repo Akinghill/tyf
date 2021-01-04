@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, makeStyles, Grid, Paper } from '@material-ui/core';
+import { Typography, makeStyles, Grid, Paper, useMediaQuery, useTheme } from '@material-ui/core';
 
 const useStyles = makeStyles({
   postSection: {
@@ -11,22 +11,25 @@ const useStyles = makeStyles({
     marginBottom: "2rem"
   },
   gridContainer: {
-    padding: "0rem 2rem"
+    padding: "0rem 0rem"
   },
   paperCard: {
     padding: "1rem",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    background: "rgba(0,0,0,.2)"
+    width: "100%",
+    minHeight: "275px",
+    background: "rgba(0,0,0,.2)",
+    marginBottom: '1rem'
   },
   postTitle: {
     alignSelf: 'flex-start',
   },
   frame: {
     border: "0px",
-    width: '355px',
-    height: "200px",
+    width: '100%',
+    height: "",
     marginBottom: "5px"
   },
   date: {
@@ -39,32 +42,36 @@ const useStyles = makeStyles({
 
 const RecentPosts = () => {
   const classes = useStyles()
+  const theme = useTheme();
+  const mdScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
+  console.log(mdScreen)
 
   return (
     <>
       <div className={classes.postSection}>
         <div>
           <Typography className={classes.recentsTitle} align='center' variant='h2'> RecentPosts </Typography>
-          <Grid container spacing={3} className={classes.gridContainer} justify="center">
-            <Grid item sm={12} md={3}>
+          <Grid container className={classes.gridContainer} justify='space-evenly' direction={mdScreen ? "column" : "row"} alignItems="center">
+            <Grid item xs={12} sm={6} md={3}>
               <Paper className={classes.paperCard} elevation={3}>
-              <iframe className={classes.frame} title="Recent Post 1" src="https://www.youtube.com/embed/jtEw9FcuQuk" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe className={classes.frame} title="Recent Post 1" src="https://www.youtube.com/embed/jtEw9FcuQuk" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 <p className={classes.date}>12-19-20</p>
                 <Typography variant='h5' className={classes.postTitle}>Increase Productivity Now</Typography>
               </Paper>
             </Grid>
 
-            <Grid item sm={12} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <Paper className={classes.paperCard} elevation={3}>
-              <iframe className={classes.frame} title="Recent Post 1" src="https://www.youtube.com/embed/r4WDyDTPIgY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe className={classes.frame} title="Recent Post 1" src="https://www.youtube.com/embed/r4WDyDTPIgY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 <p className={classes.date}>12-19-20</p>
                 <Typography variant='h5' className={classes.postTitle}>Why You Can't Change</Typography>
               </Paper>
             </Grid>
-      
-            <Grid item sm={12} md={3}>
+
+            <Grid item xs={12} sm={6} md={3}>
               <Paper className={classes.paperCard} elevation={3}>
-              <iframe className={classes.frame} title="Recent Post 1" src="https://www.youtube.com/embed/nh1x33ZrT0M" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe className={classes.frame} title="Recent Post 1" src="https://www.youtube.com/embed/nh1x33ZrT0M" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 <p className={classes.date}>11-14-20</p>
                 <Typography variant='h5' className={classes.postTitle}>Start Before You're Ready</Typography>
               </Paper>
