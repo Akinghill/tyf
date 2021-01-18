@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.js": "/tyf/static/js/main.44bacac7.chunk.js",
-    "main.js.map": "/tyf/static/js/main.44bacac7.chunk.js.map",
+    "main.js": "/tyf/static/js/main.74e099ad.chunk.js",
+    "main.js.map": "/tyf/static/js/main.74e099ad.chunk.js.map",
     "runtime-main.js": "/tyf/static/js/runtime-main.fba4a3dd.js",
     "runtime-main.js.map": "/tyf/static/js/runtime-main.fba4a3dd.js.map",
     "static/js/2.0174cf1e.chunk.js": "/tyf/static/js/2.0174cf1e.chunk.js",
     "static/js/2.0174cf1e.chunk.js.map": "/tyf/static/js/2.0174cf1e.chunk.js.map",
     "index.html": "/tyf/index.html",
     "static/js/2.0174cf1e.chunk.js.LICENSE.txt": "/tyf/static/js/2.0174cf1e.chunk.js.LICENSE.txt",
-    "static/media/approach-diagram.d848a49b.png": "/tyf/static/media/approach-diagram.d848a49b.png"
+    "static/media/approach-diagram.d848a49b.png": "/tyf/static/media/approach-diagram.d848a49b.png",
+    "static/media/hero-bg.fbf4c2b0.jpeg": "/tyf/static/media/hero-bg.fbf4c2b0.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.fba4a3dd.js",
     "static/js/2.0174cf1e.chunk.js",
-    "static/js/main.44bacac7.chunk.js"
+    "static/js/main.74e099ad.chunk.js"
   ]
 }
