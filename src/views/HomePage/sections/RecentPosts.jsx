@@ -51,7 +51,7 @@ const RecentPosts = () => {
     <>
       <div className={classes.postSection}>
         <div>
-          <Typography className={classes.recentsTitle} align='center' variant='h2'> RecentPosts </Typography>
+          <Typography className={classes.recentsTitle} align='center' variant='h2'> Recent Posts </Typography>
           <Grid container className={classes.gridContainer} justify='space-evenly' direction={mdScreen ? "column" : "row"} alignItems="center">
             <Grid item xs={12} sm={6} md={3}>
               <Paper className={classes.paperCard} elevation={3}>

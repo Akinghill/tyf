@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionTitle: {
     marginBottom: '3rem',
+    textAlign: 'center',
     [theme.breakpoints.down('md')]: {
       marginBottom: "1rem"
     },
@@ -32,15 +33,15 @@ const Mission = () => {
 
   return (
     <>
-      <div className={classes.mission}>
+      <div className={classes.mission} id="mission">
         <div className={classes.missionContent}>
           <Typography
             className={classes.sectionTitle}
             data-aos="fade-left"
             variant="h2"
           > Our Mission </Typography>
-          <Typography className={classes.missionCopy} data-aos="fade-right" variant="h3">
-            Teach You Freedom believes your mission statement goes here. Anything you've ever hoped or dreamed can be written in this space
+          <Typography className={classes.missionCopy} data-aos="fade-right" variant="h4">
+          Teach You Freedom believes every single one of us has a unique purpose to serve. That's why we're on a mission to help you remove the mental and emotional barriers keeping you stuck, and close the gap between where you are and where you want to be.
           </Typography>
         </div>
       </div>
