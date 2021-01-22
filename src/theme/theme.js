@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const tyfYellow = "#fdd835"
-const tyfBlack = "#000000"
+const tyfYellow = "#ffdf58"
+const tyfBlack = "#293334"
 
 
 const theme = createMuiTheme({
