@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
       padding: '2rem',
     },
     [theme.breakpoints.up('lg')]: {
-      paddingTop: '2rem',
+      paddingTop: '3rem',
       display: "block",
     },
   },

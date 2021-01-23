@@ -5,7 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import hero from '../../../assets/hero-bg.jpeg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   hero: {
     background: 'darkgray',
     minHeight: '90vh',
@@ -17,11 +17,22 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '2rem'
+    },
   },
   heroText: {
-    color: '#000',
+    color: '#fff',
     paddingTop: '6rem',
     width: '60%',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '5rem',
+      width: '75%',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '4rem',
+      width: '90%',
+    },
   },
   heroContent: {
     position: 'relative',
@@ -35,6 +46,12 @@ const useStyles = makeStyles({
     padding: '.5rem 2rem',
     margin: '1rem',
     fontSize: '2rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.5rem',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '1rem',
+    },
   },
   learnMoreArea: {
     color: 'white',
@@ -52,7 +69,7 @@ const useStyles = makeStyles({
     color: 'white',
     fontSize: '3rem',
   },
-});
+}));
 
 const Hero = (props) => {
   const { sectionName } = props;
@@ -62,12 +79,7 @@ const Hero = (props) => {
     <>
       <div className={classes[sectionName]}>
         <div className={classes.heroContent}>
-          <Typography
-            className={classes.heroText}
-            align="center"
-            variant="h1"
-            style={{ color: 'white' }}
-          >
+          <Typography className={classes.heroText} align="center" variant="h1">
             Are you ready to break free?
           </Typography>
           <Button
@@ -76,7 +88,7 @@ const Hero = (props) => {
             color="secondary"
             className={classes.cta}
           >
-            I'm ready
+            Take Action
           </Button>
           <a className={classes.learnMoreArea} href="#mission">
             {/* <Typography variant="h5" className={classes.learnMore}>

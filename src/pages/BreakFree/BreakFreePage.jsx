@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/layout/Layout'
-import Intro from './sections/Intro'
+import NewIntro from './sections/NewIntro'
 import Step1 from './sections/Step1'
 
 
@@ -9,7 +9,7 @@ export default function BreakFreePage() {
 
   return (
     <Layout>
-      <Intro/>
+      <NewIntro/>
       <Step1/>
     </Layout>
   )
