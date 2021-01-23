@@ -4,28 +4,28 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   footer: {
-    padding: "1rem",
+    padding: '1rem',
     height: '100px',
-    display: "flex",
-    flexDirection: "column",
+    display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
-    background: 'black'
+    background: theme.palette.primary.main,
   },
   socials: {
     color: '#fdd835',
     fontSize: '3rem',
-    cursor: "pointer",
+    cursor: 'pointer',
     '&:hover': {
-      filter: "brightness(50%)"
-    }
+      filter: 'brightness(50%)',
+    },
   },
   copyright: {
-    margin: "1rem",
-    color: "white"
-  }
-});
+    margin: '1rem',
+    color: 'white',
+  },
+}));
 
 const Footer = () => {
   const classes = useStyles();
@@ -44,7 +44,9 @@ const Footer = () => {
             <FacebookIcon className={classes.socials}></FacebookIcon>
           </Grid>
         </Grid>
-        <Typography className={classes.copyright}>© Teach You Freedom 2020</Typography>
+        <Typography className={classes.copyright}>
+          © Teach You Freedom 2020
+        </Typography>
       </footer>
     </>
   );
