@@ -3,8 +3,8 @@ import { ThemeProvider } from '@material-ui/core';
 import { Switch, Route } from 'react-router-dom';
 
 import theme from './theme/theme.js';
-import HomePage from './views/HomePage/HomePage';
-import BreakFreePage from './views/BreakFree/BreakFreePage.jsx';
+import HomePage from './pages/HomePage/HomePage';
+import BreakFreePage from './pages/BreakFree/BreakFreePage.jsx';
 import { GlobalStyle } from './GlobalStyles.js';
 
 function App() {
