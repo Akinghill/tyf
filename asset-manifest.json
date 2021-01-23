@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.js": "/tyf/static/js/main.74e099ad.chunk.js",
-    "main.js.map": "/tyf/static/js/main.74e099ad.chunk.js.map",
+    "main.js": "/tyf/static/js/main.cfad04fb.chunk.js",
+    "main.js.map": "/tyf/static/js/main.cfad04fb.chunk.js.map",
     "runtime-main.js": "/tyf/static/js/runtime-main.fba4a3dd.js",
     "runtime-main.js.map": "/tyf/static/js/runtime-main.fba4a3dd.js.map",
-    "static/js/2.0174cf1e.chunk.js": "/tyf/static/js/2.0174cf1e.chunk.js",
-    "static/js/2.0174cf1e.chunk.js.map": "/tyf/static/js/2.0174cf1e.chunk.js.map",
+    "static/js/2.bf738289.chunk.js": "/tyf/static/js/2.bf738289.chunk.js",
+    "static/js/2.bf738289.chunk.js.map": "/tyf/static/js/2.bf738289.chunk.js.map",
     "index.html": "/tyf/index.html",
-    "static/js/2.0174cf1e.chunk.js.LICENSE.txt": "/tyf/static/js/2.0174cf1e.chunk.js.LICENSE.txt",
-    "static/media/approach-diagram.d848a49b.png": "/tyf/static/media/approach-diagram.d848a49b.png",
-    "static/media/hero-bg.fbf4c2b0.jpeg": "/tyf/static/media/hero-bg.fbf4c2b0.jpeg"
+    "static/js/2.bf738289.chunk.js.LICENSE.txt": "/tyf/static/js/2.bf738289.chunk.js.LICENSE.txt",
+    "static/media/approach-diagram.2d31d8b3.png": "/tyf/static/media/approach-diagram.2d31d8b3.png",
+    "static/media/hero-bg.fbf4c2b0.jpeg": "/tyf/static/media/hero-bg.fbf4c2b0.jpeg",
+    "static/media/logo-icon.6a357ab5.png": "/tyf/static/media/logo-icon.6a357ab5.png",
+    "static/media/logo.4912af3d.png": "/tyf/static/media/logo.4912af3d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fba4a3dd.js",
-    "static/js/2.0174cf1e.chunk.js",
-    "static/js/main.74e099ad.chunk.js"
+    "static/js/2.bf738289.chunk.js",
+    "static/js/main.cfad04fb.chunk.js"
   ]
 }
