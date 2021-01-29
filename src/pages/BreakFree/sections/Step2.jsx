@@ -16,9 +16,8 @@ import { bfCopy } from '../../../data/breakfreeCopy';
 
 const useStyles = makeStyles({
   step1: {
-    // marginTop: '3rem',
+    marginTop: '3rem',
     padding: '2rem 4rem',
-    paddingTop: '6rem',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -38,10 +37,10 @@ const useStyles = makeStyles({
   },
 });
 
-const Step1 = () => {
+const Step2 = () => {
   const classes = useStyles();
   return (
-    <div className={classes.step1} id="danceWithFear">
+    <div className={classes.step1} id="danceWithFear2">
       <Typography className={classes.title} variant="h3">
         Step 1: {bfCopy.step1.title}
       </Typography>
@@ -86,7 +85,7 @@ const Step1 = () => {
           </div>
         </Grid>
       </Grid>
-      <a href="#danceWithFear2">
+      <a href="#danceWithFear">
         <IconButton className={classes.moreBtn}>
           <ExpandMoreIcon className={classes.expandIcon} />
         </IconButton>
@@ -95,4 +94,4 @@ const Step1 = () => {
   );
 };
 
-export default Step1;
+export default Step2;
