@@ -1,11 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  *{
-    box-sizing: border-box;
-  }
-  body {
-
+  html {
+    scroll-behavior: smooth;
   }
   a {
     text-decoration: none;

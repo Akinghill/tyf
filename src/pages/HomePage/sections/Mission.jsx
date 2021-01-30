@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   missionCopy: {
     [theme.breakpoints.down('md')]: {
-      fontSize: '2rem',
+      fontSize: '1.5rem',
     },
   },
 }));

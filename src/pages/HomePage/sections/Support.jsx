@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
     background: 'rgba(0,0,0,.2)',
     padding: '5rem 2rem',
     minHeight: '55vh',
+    [theme.breakpoints.down('sm')]: {
+      padding: '2rem 1rem',
+    },
   },
   sectionTitle: {
     marginBottom: '3rem',
@@ -50,6 +53,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  gridContainer: {
+    width: '100%',
+    maxWidth: '850px',
+    margin: 'auto'
+  }
 }));
 
 const Support = () => {
@@ -66,7 +74,7 @@ const Support = () => {
         >
           Support Through Ongoing Accountability and Education
         </Typography>
-        <Grid container spacing={4} alignItems="center" justify="center">
+        <Grid className={classes.gridContainer} container spacing={4} alignItems="center" justify="center">
           {supportData.map((card) => (
             <Grid item sm={12} md={4} key={card.title}>
               <SupportCard cardData={card} />
