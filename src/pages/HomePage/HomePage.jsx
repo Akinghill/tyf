@@ -11,10 +11,10 @@ export default function HomePage() {
 
   return (
     <Layout>
-      {/* <Hero sectionName='hero'></Hero>
+      <Hero sectionName='hero'></Hero>
       <Mission />
       <Approach />
-      <Support /> */}
+      <Support />
       <RecentPosts/>
     </Layout>
   )
