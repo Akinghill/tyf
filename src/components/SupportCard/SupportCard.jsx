@@ -8,9 +8,11 @@ import PersonIcon from '@material-ui/icons/Person';
 const useStyles = makeStyles((theme) => ({
   supportCard: {
     padding: '1rem',
-    minHeight: '200px',
+    minHeight: '290px',
+    maxWidth: '312px',
     display: 'flex',
     justifyContent: 'center',
+    margin: 'auto',
     [theme.breakpoints.down('md')]: {
       minHeight: '280px',
     },
@@ -29,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   supportCardContent: {
-    margin: '1rem 2rem',
+    margin: '1rem',
     textAlign: 'center',
   },
   supportCardIcon: {
