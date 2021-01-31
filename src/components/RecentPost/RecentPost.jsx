@@ -70,7 +70,6 @@ const RecentPost = ({ postData, reverse }) => {
   const classes = useStyles();
   return (
     <>
-      {/* className={`${this.props.classes.container} ${this.props.classes.spacious}`} */}
       <div
         className={`${classes.recentContainer} ${
           reverse === true ? classes.reverse : null

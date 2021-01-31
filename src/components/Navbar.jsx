@@ -24,8 +24,6 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import logoIcon from '../assets/logo-icon.png';
 
-
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -44,10 +42,11 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   closeIcon: {
-    color: 'white',
+    color: theme.palette.secondary.main,
   },
   drawerPaper: {
-    background: '#2a2929',
+    background: theme.palette.primary.main,
+    width: '175px',
     color: 'white',
   },
   menuIcon: {
@@ -58,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
   },
+  drawer: {},
 }));
 
 export default function Navbar() {
@@ -131,18 +131,9 @@ export default function Navbar() {
         </div>
         <Divider />
         <List>
-          {['Login', 'Break Free', 'About'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index === 0 && <AccountBoxIcon className={classes.menuIcon} />}
-                {index === 1 && (
-                  <Brightness7Icon className={classes.menuIcon} />
-                )}
-                {index === 2 && <InfoIcon className={classes.menuIcon} />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          <Link to="/breakfree">
+            <Button color="secondary">Break Free</Button>
+          </Link>
         </List>
         <Divider />
       </Drawer>

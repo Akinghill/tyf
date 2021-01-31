@@ -1,8 +1,14 @@
 import React from 'react';
-import { Typography, IconButton, makeStyles } from '@material-ui/core';
+import {
+  Typography,
+  IconButton,
+  makeStyles,
+  useTheme,
+  useMediaQuery,
+} from '@material-ui/core';
 
 import breakfreeImg1 from '../../../assets/breakfree-1.jpeg';
-import { bfCopy } from '../../../data/breakfreeCopy';
+import { breakFreeData } from '../../../data/breakFreeData';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
@@ -39,6 +45,8 @@ const useStyles = makeStyles((theme) => ({
       height: '110%',
       clipPath: 'polygon(0 0, 100% 0, 100% 90%, 0 100%)',
       position: 'static',
+      boxSizing: 'border-box',
+      padding: '0rem',
     },
     [theme.breakpoints.down('xs')]: {
       padding: '1rem',
@@ -58,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
       width: '100%',
       height: '34vh',
       position: 'relative',
-      top: '-50px',
+      top: '50px',
     },
   },
   leftContainer: {
@@ -118,6 +126,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Intro = () => {
   const classes = useStyles();
+  const theme = useTheme();
+  const smScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <>
       <div className={classes.sectionPad} />
@@ -127,7 +138,9 @@ const Intro = () => {
             <Typography variant="h1" className={classes.title}>
               Breaking Free:
             </Typography>
-            <Typography className={classes.intro}>{bfCopy.intro}</Typography>
+            <Typography className={classes.intro}>
+              {breakFreeData.intro}
+            </Typography>
             <Typography variant="h2" className={classes.subIntro}>
               We all have dreams, <br /> but we've lost so much certainty{' '}
             </Typography>
@@ -137,16 +150,18 @@ const Intro = () => {
               nostrum quo itaque, quibusdam odio eaque ipsam! Vitae soluta unde
               velit voluptas.
             </Typography>
-            <a href='#danceWithFear'>
+            <a href="#step1">
               <IconButton className={classes.moreBtn}>
                 <ExpandMoreIcon className={classes.expandIcon} />
               </IconButton>
             </a>
           </div>
         </div>
-        <div className={classes.introRight}>
-          {/* <img src={breakfreeImg1} alt="freedom"/> */}
-        </div>
+        {!smScreen ? (
+          <div className={classes.introRight}>
+            {/* <img src={breakfreeImg1} alt="freedom"/> */}
+          </div>
+        ) : null}
       </div>
     </>
   );
