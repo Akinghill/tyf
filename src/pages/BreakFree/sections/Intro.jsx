@@ -21,9 +21,12 @@ const useStyles = makeStyles((theme) => ({
   introContainer: {
     position: 'relative',
     display: 'flex',
-    height: '80vh',
+    minHeight: '600px',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
+    },
+    [theme.breakpoints.down('xs')]: {
+      minHeight: '665px'
     },
   },
   introLeft: {

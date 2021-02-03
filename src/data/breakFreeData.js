@@ -33,5 +33,35 @@ export const breakFreeData = {
       ],
       nextSectionId: '#step3'
     },
+    {
+      step: 'Step 3',
+      sectionId: 'step3',
+      title: 'Destroying Limiting Beliefs',
+      subTitle1:
+        'Without a vision people perish. In this lesson we’ll dive deep into your why and create a vision for your life that will pull you to it like a magnet.',
+      subTitle2:
+        'By the end of this second step on your breakthrough journey you will be able to..',
+      list: [
+        'Identify the between where you are and where you want to go',
+        'Become self aware of your why and guiding values',
+        'Create tangible goals in each of the Big 5 areas of life',
+      ],
+      nextSectionId: '#step4'
+    },
+    {
+      step: 'Step 4',
+      sectionId: 'step4',
+      title: 'Creating Sustainable Systems',
+      subTitle1:
+        'Without a vision people perish. In this lesson we’ll dive deep into your why and create a vision for your life that will pull you to it like a magnet.',
+      subTitle2:
+        'By the end of this second step on your breakthrough journey you will be able to..',
+      list: [
+        'Identify the between where you are and where you want to go',
+        'Become self aware of your why and guiding values',
+        'Create tangible goals in each of the Big 5 areas of life',
+      ],
+      nextSectionId: '#step4'
+    },
   ],
 };

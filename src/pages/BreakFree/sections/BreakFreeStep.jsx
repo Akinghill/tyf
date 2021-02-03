@@ -37,7 +37,15 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
     },
   },
-  info: {},
+  info: {
+    padding: '0rem 5rem',
+    [theme.breakpoints.down('md')]: {
+      padding: '0rem 2rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+      padding: '2rem 0rem',
+    },
+  },
   reverse: {
     flexDirection: 'row-reverse',
   },
@@ -52,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
   listIcon: {
     [theme.breakpoints.down('sm')]: {
-      minWidth: '35px'
+      minWidth: '35px',
     },
   },
   videoContainer: {
@@ -61,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     [theme.breakpoints.down('xs')]: {
-      marginBottom: '2rem'
+      marginBottom: '2rem',
     },
   },
   player: {
