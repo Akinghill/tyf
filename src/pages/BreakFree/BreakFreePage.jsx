@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Layout from '../../components/layout/Layout';
 import Intro from './sections/Intro';
@@ -7,6 +7,14 @@ import { breakFreeData } from '../../data/breakFreeData';
 import BreakFreeStep from './sections/BreakFreeStep';
 
 export default function BreakFreePage() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+    window.scrollTo(0, 0);
+    return () => {
+      document.documentElement.style.scrollBehavior = 'auto';
+    };
+  }, []);
+
   return (
     <Layout>
       <Intro />
