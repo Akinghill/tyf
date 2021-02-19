@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, makeStyles, Typography } from '@material-ui/core';
 
+import Popup from '../../../components/Popup/Popup';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import hero from '../../../assets/hero-bg.jpeg';
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     [theme.breakpoints.down('sm')]: {
-      marginTop: '2rem'
+      marginTop: '2rem',
     },
   },
   heroText: {
@@ -41,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: '5rem',
   },
   cta: {
     padding: '.5rem 2rem',
@@ -72,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Hero = (props) => {
-  const { sectionName } = props;
+  const { sectionName, handleClose, handleClickOpen, open } = props;
   const classes = useStyles();
 
   return (
@@ -87,15 +89,14 @@ const Hero = (props) => {
             variant="contained"
             color="secondary"
             className={classes.cta}
+            onClick={handleClickOpen}
           >
             Take Action
           </Button>
           <a className={classes.learnMoreArea} href="#mission">
-            {/* <Typography variant="h5" className={classes.learnMore}>
-              Learn more
-            </Typography> */}
             <ExpandMoreIcon className={classes.learnMoreIcon} />
           </a>
+          <Popup handleClose={handleClose} open={open} />
         </div>
       </div>
     </>

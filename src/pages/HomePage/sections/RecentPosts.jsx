@@ -2,8 +2,6 @@ import React from 'react';
 import {
   Typography,
   makeStyles,
-  useMediaQuery,
-  useTheme,
 } from '@material-ui/core';
 import RecentPost from '../../../components/RecentPost/RecentPost';
 

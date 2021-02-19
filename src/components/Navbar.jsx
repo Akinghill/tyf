@@ -4,21 +4,15 @@ import {
   AppBar,
   Divider,
   List,
-  ListItem,
   Drawer,
   Toolbar,
   Button,
   IconButton,
-  ListItemText,
-  ListItemIcon,
   useMediaQuery,
 } from '@material-ui/core/';
 import MenuIcon from '@material-ui/icons/Menu';
 import { useTheme } from '@material-ui/core/styles';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import Brightness7Icon from '@material-ui/icons/Brightness7';
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
-import InfoIcon from '@material-ui/icons/Info';
 
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';

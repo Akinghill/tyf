@@ -3,8 +3,6 @@ import ReactPlayer from 'react-player';
 import {
   Typography,
   makeStyles,
-  useMediaQuery,
-  useTheme,
 } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
