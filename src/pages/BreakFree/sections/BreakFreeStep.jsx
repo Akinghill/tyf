@@ -119,7 +119,7 @@ const BreakFreeStep = ({ breakFreeData, reverse }) => {
         <div className={classes.videoContainer}>
           <ReactPlayer
             className={classes.player}
-            url="https://www.youtube.com/watch?v=U80mqILR414&ab_channel=TeachYouFreedom"
+            url={breakFreeData.vidUrl}
             controls
           />
         </div>

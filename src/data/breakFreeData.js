@@ -16,7 +16,8 @@ export const breakFreeData = {
         'Learn how and where your fear is holding you back',
         'Develop tools and tactics to overcome and move through fear',
       ],
-      nextSectionId: '#step2'
+      nextSectionId: '#step2',
+      vidUrl: 'https://www.youtube.com/watch?v=y8TF6rTJ-lA',
     },
     {
       step: 'Step 2',
@@ -31,7 +32,8 @@ export const breakFreeData = {
         'Become self aware of your why and guiding values',
         'Create tangible goals in each of the Big 5 areas of life',
       ],
-      nextSectionId: '#step3'
+      nextSectionId: '#step3',
+      vidUrl: 'https://www.youtube.com/watch?v=6IQHi3o-72U',
     },
     {
       step: 'Step 3',
@@ -46,7 +48,8 @@ export const breakFreeData = {
         'Become self aware of your why and guiding values',
         'Create tangible goals in each of the Big 5 areas of life',
       ],
-      nextSectionId: '#step4'
+      nextSectionId: '#step4',
+      vidUrl: 'https://youtu.be/7naieiQHnEk',
     },
     {
       step: 'Step 4',
@@ -61,7 +64,8 @@ export const breakFreeData = {
         'Become self aware of your why and guiding values',
         'Create tangible goals in each of the Big 5 areas of life',
       ],
-      nextSectionId: '#step4'
+      nextSectionId: '#step4',
+      vidUrl: 'https://youtu.be/Ry5h-uCysXg',
     },
   ],
 };
