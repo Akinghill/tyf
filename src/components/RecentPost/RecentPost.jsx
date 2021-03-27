@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import {
-  Typography,
-  makeStyles,
-} from '@material-ui/core';
+import { Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   recentContainer: {
@@ -55,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   postCopy: {
     marginTop: '2rem',
+    lineHeight: '30px',
   },
   reverse: {
     flexDirection: 'row-reverse',

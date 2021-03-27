@@ -48,6 +48,8 @@ const useStyles = makeStyles((theme) => ({
       height: '110%',
       clipPath: 'polygon(0 0, 100% 0, 100% 90%, 0 100%)',
       position: 'static',
+      paddingTop: "1rem",
+      paddingLeft: "1rem",
       boxSizing: 'border-box',
       padding: '0rem',
     },

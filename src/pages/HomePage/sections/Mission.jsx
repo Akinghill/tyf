@@ -49,7 +49,7 @@ const Mission = () => {
             data-aos="fade-right"
             variant="h4"
           >
-            Teach You Freedom believes every single one of us has a unique
+            Lumenize believes every single one of us has a unique
             purpose to serve. That's why we're on a mission to help you remove
             the mental and emotional barriers keeping you stuck, and close the
             gap between where you are and where you want to be.

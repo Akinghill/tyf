@@ -3,6 +3,7 @@ import { Typography, makeStyles, Grid } from '@material-ui/core';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -35,17 +36,35 @@ const Footer = () => {
       <footer className={classes.footer}>
         <Grid container spacing={4} justify="center">
           <Grid item>
-            <YouTubeIcon className={classes.socials}></YouTubeIcon>
+            <a
+              href="https://www.youtube.com/channel/UCXgqVIxurxQDl_gfu4z4otQ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <YouTubeIcon className={classes.socials}></YouTubeIcon>
+            </a>
           </Grid>
           <Grid item>
-            <InstagramIcon className={classes.socials}></InstagramIcon>
+            <a
+              href="https://www.instagram.com/adam.letica/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstagramIcon className={classes.socials}></InstagramIcon>
+            </a>
           </Grid>
           <Grid item>
-            <FacebookIcon className={classes.socials}></FacebookIcon>
+            <a
+              href="https://www.facebook.com/adletica12"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookIcon className={classes.socials}></FacebookIcon>
+            </a>
           </Grid>
         </Grid>
         <Typography className={classes.copyright}>
-          © Teach You Freedom 2020
+          © Lumenize 2021
         </Typography>
       </footer>
     </>

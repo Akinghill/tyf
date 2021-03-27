@@ -85,7 +85,7 @@ const BreakFreeStep = ({ breakFreeData, reverse }) => {
   return (
     <div className={classes.stepContainer} id={breakFreeData.sectionId}>
       <Typography className={classes.title} variant="h3">
-        {breakFreeData.step}: {breakFreeData.title}
+        {breakFreeData.module}: {breakFreeData.title}
       </Typography>
       <div
         className={`${classes.contentContainer} ${

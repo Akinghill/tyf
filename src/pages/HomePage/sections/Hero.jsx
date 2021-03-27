@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, makeStyles, Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import Popup from '../../../components/Popup/Popup';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -20,6 +21,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     [theme.breakpoints.down('sm')]: {
       marginTop: '2rem',
+    },
+    '&::before': {
+      content: '" "',
+      position: 'absolute',
+      display: 'block',
+      height: "90vh",
+      width: '100%',
+      background: 'rgba(0,0,0,0.5)',
     },
   },
   heroText: {
@@ -45,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '5rem',
   },
   cta: {
+    cursor: 'pointer',
     padding: '.5rem 2rem',
     margin: '1rem',
     fontSize: '2rem',
@@ -74,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Hero = (props) => {
-  const { sectionName, handleClose, handleClickOpen, open } = props;
+  const { sectionName } = props;
   const classes = useStyles();
 
   return (
@@ -84,19 +94,19 @@ const Hero = (props) => {
           <Typography className={classes.heroText} align="center" variant="h1">
             Are you ready to break free?
           </Typography>
-          <Button
-            size="large"
-            variant="contained"
-            color="secondary"
-            className={classes.cta}
-            onClick={handleClickOpen}
-          >
-            Take Action
-          </Button>
+          <Link to="/breakfree">
+            <Button
+              size="large"
+              variant="contained"
+              color="secondary"
+              className={classes.cta}
+            >
+              Take Action
+            </Button>
+          </Link>
           <a className={classes.learnMoreArea} href="#mission">
             <ExpandMoreIcon className={classes.learnMoreIcon} />
           </a>
-          <Popup handleClose={handleClose} open={open} />
         </div>
       </div>
     </>
