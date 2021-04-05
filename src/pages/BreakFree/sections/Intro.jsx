@@ -21,16 +21,17 @@ const useStyles = makeStyles((theme) => ({
   introContainer: {
     position: 'relative',
     display: 'flex',
-    minHeight: '600px',
+    height: '300px',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
     },
     [theme.breakpoints.down('xs')]: {
-      minHeight: '665px'
+      minHeight: '300px',
     },
   },
   introLeft: {
-    position: 'absolute',
+    boxSizing: 'border-box',
+    height: '100%',
     padding: '2rem',
     top: 0,
     bottom: -30,
@@ -43,15 +44,12 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     [theme.breakpoints.down('sm')]: {
-      top: '0px',
       width: '100%',
       height: '110%',
       clipPath: 'polygon(0 0, 100% 0, 100% 90%, 0 100%)',
-      position: 'static',
-      paddingTop: "1rem",
-      paddingLeft: "1rem",
       boxSizing: 'border-box',
-      padding: '0rem',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     [theme.breakpoints.down('xs')]: {
       padding: '1rem',
@@ -141,12 +139,12 @@ const Intro = () => {
         <div className={classes.leftContainer}>
           <div className={classes.introLeft}>
             <Typography variant="h1" className={classes.title}>
-              Breaking Free:
+              In a moment - anything can change
             </Typography>
             <Typography className={classes.intro}>
               {breakFreeData.intro}
             </Typography>
-            <Typography variant="h2" className={classes.subIntro}>
+            {/* <Typography variant="h2" className={classes.subIntro}>
               We all have dreams, <br /> but we've lost so much certainty{' '}
             </Typography>
             <Typography className={classes.introCopy2}>
@@ -159,8 +157,11 @@ const Intro = () => {
               <IconButton className={classes.moreBtn}>
                 <ExpandMoreIcon className={classes.expandIcon} />
               </IconButton>
-            </a>
+            </a> */}
           </div>
+        </div>
+        <div className={classes.introRight}>
+          {/* <img src={breakfreeImg1} alt="freedom"/> */}
         </div>
         {!smScreen ? (
           <div className={classes.introRight}>

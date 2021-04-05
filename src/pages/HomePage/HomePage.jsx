@@ -6,6 +6,7 @@ import Hero from './sections/Hero';
 import Mission from './sections/Mission';
 import RecentPosts from './sections/RecentPosts';
 import Support from './sections/Support';
+import Contact from '../../components/Contact'
 
 export default function HomePage() {
   const [open, setOpen] = React.useState(false);

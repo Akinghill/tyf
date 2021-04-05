@@ -5,6 +5,7 @@ import Intro from './sections/Intro';
 
 import { breakFreeData } from '../../data/breakFreeData';
 import BreakFreeStep from './sections/BreakFreeStep';
+import Contact from '../../components/Contact';
 
 export default function BreakFreePage() {
   useEffect(() => {
