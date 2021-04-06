@@ -16,7 +16,7 @@ import ReactPlayer from 'react-player';
 const useStyles = makeStyles((theme) => ({
   stepContainer: {
     padding: '2rem 4rem',
-    paddingTop: '6rem',
+
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -26,18 +26,20 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
+    textAlign: 'center',
     fontSize: '2rem',
     fontWeight: '400',
     marginBottom: '2rem',
   },
   contentContainer: {
     display: 'flex',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexDirection: 'column-reverse !important',
       alignItems: 'center',
     },
   },
   info: {
+    maxWidth: '760px',
     padding: '0rem 5rem',
     [theme.breakpoints.down('md')]: {
       padding: '0rem 2rem',
@@ -68,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '700px',
     display: 'flex',
     justifyContent: 'center',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('md')]: {
       marginBottom: '2rem',
     },
   },
@@ -78,12 +80,21 @@ const useStyles = makeStyles((theme) => ({
       height: '200px !important',
     },
   },
+  hr: {
+    width: '100%',
+    border: '0',
+    height: '1px',
+    backgroundImage:
+      'linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))',
+  },
 }));
 
 const BreakFreeStep = ({ breakFreeData, reverse }) => {
   const classes = useStyles();
   return (
     <div className={classes.stepContainer} id={breakFreeData.sectionId}>
+            <hr className={classes.hr} />
+
       <Typography className={classes.title} variant="h3">
         {breakFreeData.module}: {breakFreeData.title}
       </Typography>

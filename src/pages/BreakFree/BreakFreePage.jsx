@@ -6,6 +6,7 @@ import Intro from './sections/Intro';
 import { breakFreeData } from '../../data/breakFreeData';
 import BreakFreeStep from './sections/BreakFreeStep';
 import Contact from '../../components/Contact';
+import Definition from './sections/Definition';
 
 export default function BreakFreePage() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function BreakFreePage() {
   return (
     <Layout>
       <Intro />
+      <Definition />
       {breakFreeData.data.map((breakfreeStep, i) => (
         <BreakFreeStep
           breakFreeData={breakfreeStep}

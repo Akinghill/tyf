@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
     },
-    [theme.breakpoints.down('xs')]: {
-      minHeight: '300px',
+    [theme.breakpoints.down('sm')]: {
+      minHeight: '500px',
     },
   },
   introLeft: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
-      height: '110%',
+      height: '45%',
       clipPath: 'polygon(0 0, 100% 0, 100% 90%, 0 100%)',
       boxSizing: 'border-box',
       justifyContent: 'center',
@@ -68,8 +68,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '34vh',
-      position: 'relative',
-      top: '50px',
+      top: '80px',
     },
   },
   leftContainer: {
@@ -81,8 +80,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
     fontWeight: '400',
   },
+  titleTwo: {
+    paddingLeft: '3rem',
+  },
   intro: {
-    width: '50%',
+    width: '70%',
     paddingTop: '1rem',
     paddingLeft: '3rem',
     letterSpacing: '2px',
@@ -107,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   introCopy2: {
-    width: '65%',
+    width: '70%',
     paddingTop: '2rem',
     paddingLeft: '6rem',
     letterSpacing: '2px',
@@ -139,7 +141,8 @@ const Intro = () => {
         <div className={classes.leftContainer}>
           <div className={classes.introLeft}>
             <Typography variant="h1" className={classes.title}>
-              In a moment - anything can change
+              In a moment, <br />{' '}
+              <span className={classes.titleTwo}>anything can change</span>
             </Typography>
             <Typography className={classes.intro}>
               {breakFreeData.intro}
