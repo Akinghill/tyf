@@ -87,7 +87,7 @@ const RecentPost = ({ postData, reverse }) => {
           <Typography variant="body1" className={classes.postCopy}>
             {postData.postCopy}
           </Typography>{' '}
-          <Typography variant="span" className={classes.date}>
+          <Typography variant="caption" className={classes.date}>
             {postData.postDate}
           </Typography>
         </div>

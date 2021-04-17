@@ -142,7 +142,7 @@ const Intro = () => {
           <div className={classes.introLeft}>
             <Typography variant="h1" className={classes.title}>
               In a moment, <br />{' '}
-              <span className={classes.titleTwo}>anything can change</span>
+              <span className={classes.titleTwo}>anything can change.</span>
             </Typography>
             <Typography className={classes.intro}>
               {breakFreeData.intro}

@@ -36,7 +36,7 @@ const RecentPosts = () => {
             Recent Posts
           </Typography>
           {recentPostData.map((postData, i) => (
-            <RecentPost postData={postData} reverse={i%2===0 ? false: true}/>
+            <RecentPost key={postData.postDate} postData={postData} reverse={i%2===0 ? false: true}/>
           ))}
         </div>
       </div>

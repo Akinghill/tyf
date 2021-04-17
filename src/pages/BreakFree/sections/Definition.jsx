@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     minHeight: '30vh',
     [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column'
+      flexDirection: 'column',
     },
   },
   word: {
@@ -19,13 +19,15 @@ const useStyles = makeStyles((theme) => ({
   pronunciation: {
     color: 'rgba(0,0,0,.7)',
     textAlign: 'center',
+    fontSize: '1.5rem'
   },
   definition: {
     flex: 4,
     padding: '4rem',
     fontSize: '2rem',
+    fontStyle: 'italic',
     [theme.breakpoints.down('sm')]: {
-      padding: '2rem'
+      padding: '2rem',
     },
   },
   // definitionContent: {
@@ -62,7 +64,8 @@ const Definition = () => {
         </div>
 
         <Typography className={classes.definition} variant="p">
-          The moment a mental or emotional block is removed and the path forward is illuminated.
+          The moment a mental or emotional block is removed and the path forward
+          is illuminated.
         </Typography>
       </div>
     </>
