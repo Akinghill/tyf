@@ -92,7 +92,7 @@ const Hero = (props) => {
       <div className={classes[sectionName]}>
         <div className={classes.heroContent}>
           <Typography className={classes.heroText} align="center" variant="h1">
-            Are you ready to break free?
+            Are You Ready To Break Free?
           </Typography>
           <Link to="/breakfree">
             <Button

@@ -1,6 +1,6 @@
 export const breakFreeData = {
   intro:
-    'Join us in this free, 5 part training corse',
+    'Join us in this free, five part training course',
   subIntro: "We all have dreams, but we've lost so much certainty",
 
   data: [

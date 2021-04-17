@@ -62,7 +62,7 @@ const Definition = () => {
         </div>
 
         <Typography className={classes.definition} variant="p">
-          The moment a mental or emotional block is removed and the path forward is illuminated
+          The moment a mental or emotional block is removed and the path forward is illuminated.
         </Typography>
       </div>
     </>
